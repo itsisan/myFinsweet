@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* fonts  */
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+/* layer component classes  */
+@layer components {
+  .header {
+    @apply w-full h-[760px] bg-[#1C1E53];
+  }
+
+  .header__top {
+    @apply w-[100%] h-[92px] bg-[#1C1E53] ;
+  }
+
+  .header__top__inner {
+    @apply flex items-center w-[85%] mx-auto;
+  }
+
+  .header__top__right {
+    @apply flex w-full h-[92px] text-lg flex-row-reverse place-items-center justify-between font-[poppins];
+  }
+
+  .header__top__nav {
+    @apply w-[60%] flex items-center justify-between text-[#BBBBCB];
+  }
+
+  .header__top__btn {
+    @apply w-[185px] h-[60px] flex items-center justify-center border-2 border-[#F4F6FC33] rounded-[185px];
+  }
+
+  .header__bottom {
+    @apply w-[85%] mx-auto;
+  }
+
+  /* .header__bottom__right {
+    @apply w-[100%];
+  } */
+}
