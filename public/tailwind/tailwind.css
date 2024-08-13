@@ -21,7 +21,7 @@
 /* layer component classes  */
 @layer components {
   .header {
-    @apply w-full h-[760px] bg-[#1C1E53] font-[poppins-regular];
+    @apply w-full bg-[#1C1E53] font-[poppins-regular];
   }
 
   .header__top {
@@ -41,11 +41,15 @@
   }
 
   .header__top__nav__link {
-    @apply hover:text-[#ffffff] transition;
+    @apply relative pb-[5px] hover:text-[#ffffff] transition;
+  }
+
+  .header__top__nav__link::after {
+    @apply absolute content-[''] w-[0%]  h-[1px] bg-[#ffffff] bottom-0 left-0 hover:w-[100%] duration-300;
   }
 
   .header__top__btn {
-    @apply w-[185px] h-[60px] flex items-center justify-center border-2 border-[#F4F6FC33] rounded-[185px];
+    @apply w-[185px] h-[60px] flex items-center justify-center border-2 border-[#F4F6FC33] rounded-[185px] hover:bg-[#2d2e69] transition;
   }
 
   .header__bottom {
