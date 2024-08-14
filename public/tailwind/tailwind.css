@@ -20,6 +20,11 @@
 
 /* layer component classes  */
 @layer components {
+
+  .wrapper {
+    @apply cursor-default;
+  }
+
   .header {
     @apply w-full bg-[#1C1E53] font-[poppins-regular];
   }
@@ -49,7 +54,7 @@
   }
 
   .header__top__btn {
-    @apply w-[185px] h-[60px] flex items-center justify-center border-2 border-[#F4F6FC33] rounded-[185px] hover:bg-[#2d2e69] transition;
+    @apply w-[185px] h-[60px] flex items-center justify-center border-2 border-[#F4F6FC33] rounded-[185px] hover:bg-[#2d2e69] active:scale-[0.9] transition;
   }
 
   .header__bottom {
@@ -73,10 +78,66 @@
   }
 
   .header__bottom__primary__btn {
-    @apply w-[230px] h-[60px] bg-[#FCD980] rounded-[41px] font-[manrope] text-center leading-[60px] text-[16px] text-[#1B1C2B] font-[600];
+    @apply w-[230px] h-[60px] bg-[#FCD980] rounded-[41px] font-[manrope] text-center leading-[60px] text-[16px] text-[#1B1C2B] font-[600] hover:bg-[#fcd980e1] active:scale-[0.9] transition;
   }
 
   .header__bottom__text__btn {
-    @apply flex items-center gap-[10px] text-[#ffffff] text-[16px];
+    @apply relative flex items-center flex-row-reverse gap-[10px] text-[#ffffff] text-[16px];
+  }
+
+  .svg-1 {
+    @apply absolute right-[-50px] w-[40px] h-[20px] flex items-center transition-[right];
+  }
+
+  .header__bottom__text__btn:hover .svg-1 {
+    @apply right-[-55px];
+  }
+
+  .main__work {
+    @apply w-full h-[661px] bg-[#F4F6FC] font-[poppins-regular];
+  }
+
+  .main__work__inner {
+    @apply w-[85%] h-full mx-auto flex items-center justify-between;
+  }
+
+  .main__work__left {
+    @apply h-[184px] flex flex-col justify-between;
+  }
+
+  .main__work__left__title {
+    @apply text-[48px] font-[600];
+  }
+
+  .main__work__left__p {
+    @apply w-[405px] text-[#666773] text-[16px] font-[400] font-[poppins-regular];
+  }
+
+  .main__work__left__btn {
+    @apply relative flex items-center justify-between w-[170px] text-[#2405F2] font-[600];
+  }
+
+  .svg-2 {
+    @apply absolute right-0 transition-[right];
+  }
+
+  .main__work__left__btn:hover .svg-2 {
+    @apply right-[-5px];
+  }
+
+  .main__work__right {
+    @apply w-[600px] h-[405px] grid grid-cols-2 gap-x-[30px]; 
+  }
+
+  .main__work__right__card {
+    @apply flex flex-col justify-evenly w-[250px] h-[170px];
+  }
+
+  .work__card__title {
+    @apply text-[28px] font-[600];
+  }
+
+  .work__card__p {
+    @apply text-[#666773];
   }
 }
