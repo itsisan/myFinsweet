@@ -6,8 +6,20 @@
     <title>Finsweet: Webflow Development, Design, and Product Agency</title>
     <link rel="stylesheet" href="./public/css/main.css" />
   </head>
-  <body>
+  <body onload="hideLoader()">
+    <!-- wrapper -->
     <div class="wrapper">
+      <!-- loading -->
+      <div class="page-loader">
+        <div class="page-loader-text">Loading</div>
+        <div class="spiner-holder">
+          <div class="spinner sp-1"></div>
+          <div class="spinner sp-2"></div>
+          <div class="spinner sp-3"></div>
+        </div>
+      </div>
+      <!-- loading -->
+      <!-- header -->
       <header class="header h-[750px]">
         <div class="header__top">
           <div class="header__top__inner">
@@ -562,6 +574,8 @@
           </div>
         </div>
       </header>
+      <!-- header -->
+      <!-- main -->
       <main class="main">
         <div class="main__work">
           <div class="main__work__inner">
@@ -793,7 +807,7 @@
                   Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                   aliquam .
                 </p>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -804,10 +818,19 @@
         <div class="main__inquiry"></div>
         <div class="main__blog"></div>
       </main>
+      <!-- main -->
+      <!-- footer -->
       <footer class="footer">
         <div class="footer__top"></div>
         <div class="footer__bottom"></div>
       </footer>
+      <!-- footer -->
     </div>
+    <!-- wrapper -->
+
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="JS/loading.js"></script>
+    <!-- scripts -->
   </body>
 </html>

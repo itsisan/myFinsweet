@@ -20,9 +20,36 @@
 
 /* layer component classes  */
 @layer components {
-
   .wrapper {
     @apply cursor-default;
+  }
+
+  .page-loader {
+    @apply absolute w-[200px] h-[150px] left-[calc(50%-200px/2)] top-[calc(50%-150px/2)] flex flex-col items-center justify-center gap-5 z-10 rounded-[8px] bg-[#ffffff];
+  }
+
+  .page-loader-text {
+    @apply text-[#BBBBCB] text-center font-bold uppercase;
+  }
+
+  .spiner-holder {
+    @apply flex items-center justify-center w-[100px];
+  }
+
+  .spinner {
+    @apply w-[20px] h-[20px] mx-auto bg-[#BBBBCB] rounded-full transition-transform;
+  }
+
+  .sp-1 {
+    @apply animate-[loadingAnimation_1s_ease-in-out_100ms_infinite_alternate];
+  }
+
+  .sp-2 {
+    @apply animate-[loadingAnimation_1s_ease-in-out_200ms_infinite_alternate];
+  }
+
+  .sp-3 {
+    @apply animate-[loadingAnimation_1s_ease-in-out_300ms_infinite_alternate];
   }
 
   .header {
@@ -94,11 +121,11 @@
   }
 
   .main__work {
-    @apply w-full h-[661px] bg-[#F4F6FC] font-[poppins-regular];
+    @apply w-full h-[661px] flex items-center bg-[#F4F6FC] font-[poppins-regular];
   }
 
   .main__work__inner {
-    @apply w-[85%] h-full mx-auto flex items-center justify-between;
+    @apply w-[85%] mx-auto flex items-start justify-between;
   }
 
   .main__work__left {
@@ -126,7 +153,7 @@
   }
 
   .main__work__right {
-    @apply w-[600px] h-[405px] grid grid-cols-2 gap-x-[30px]; 
+    @apply w-[600px] h-[405px] grid grid-cols-2 gap-x-[30px];
   }
 
   .main__work__right__card {
@@ -139,5 +166,9 @@
 
   .work__card__p {
     @apply text-[#666773];
+  }
+
+  .main__projects {
+    @apply w-full h-[1000px] bg-black;
   }
 }

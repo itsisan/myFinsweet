@@ -2,8 +2,14 @@
 export default {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        loadingAnimation: {
+          "0%": { transform: "scale(0.5)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+    },
   },
   plugins: [],
-}
-
+};

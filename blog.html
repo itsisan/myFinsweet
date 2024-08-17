@@ -6,8 +6,18 @@
     <title>Finsweet: Webflow Development, Design, and Product Agency</title>
     <link rel="stylesheet" href="./public/css/main.css" />
   </head>
-  <body>
+  <body onload="hideLoader()">
     <div class="wrapper">
+      <!-- loading -->
+      <div class="page-loader">
+        <div class="page-loader-text">Loading</div>
+        <div class="spiner-holder">
+          <div class="spinner sp-1"></div>
+          <div class="spinner sp-2"></div>
+          <div class="spinner sp-3"></div>
+        </div>
+      </div>
+      <!-- loading -->
       <header class="header">
         <div class="header__top">
           <div class="header__top__inner">
@@ -18,11 +28,7 @@
             </div>
             <div class="header__top__right">
               <nav class="header__top__nav">
-                <a
-                  href="index.html"
-                  class="header__top__nav__link "
-                  >Home</a
-                >
+                <a href="index.html" class="header__top__nav__link">Home</a>
                 <a href="about.html" class="header__top__nav__link">About us</a>
                 <a href="features.html" class="header__top__nav__link"
                   >Features</a
@@ -31,7 +37,11 @@
                   >Pricing</a
                 >
                 <a href="FAQ.html" class="header__top__nav__link">FAQ</a>
-                <a href="blog.html" class="header__top__nav__link text-[#ffffff]">Blog</a>
+                <a
+                  href="blog.html"
+                  class="header__top__nav__link text-[#ffffff]"
+                  >Blog</a
+                >
               </nav>
               <a href="contact.html" class="header__top__btn text-[#ffffff]"
                 >Contact us</a
@@ -43,5 +53,9 @@
       <main class="main"></main>
       <footer class="footer"></footer>
     </div>
+    <!-- scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="JS/loading.js"></script>
+    <!-- scripts -->
   </body>
 </html>
