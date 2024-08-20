@@ -21,7 +21,7 @@
 /* layer component classes  */
 @layer components {
   .wrapper {
-    @apply cursor-default;
+    @apply w-full h-full cursor-default;
   }
 
   .page-loader {
@@ -61,15 +61,15 @@
   }
 
   .header__top__inner {
-    @apply flex items-center justify-between w-[85%] mx-auto;
+    @apply w-[80%] h-full flex items-center justify-between mx-auto md:w-[95%] lg:w-[85%];
   }
 
   .header__top__right {
-    @apply w-[55%] flex gap-[30px] h-[92px] text-lg flex-row items-center justify-between font-[500];
+    @apply hidden  h-full lg:w-[60%] md:flex md:w-[75%] gap-[30px] text-lg flex-row items-center justify-between font-[500];
   }
 
   .header__top__nav {
-    @apply relative w-[70%] flex items-center justify-between text-[#BBBBCB];
+    @apply relative w-[75%] flex items-center justify-between text-[#BBBBCB];
   }
 
   .header__top__nav__link {
@@ -169,7 +169,27 @@
   }
 
   .main__projects {
-    @apply w-full h-[980px] bg-[#ffffff];
+    @apply w-[85%] h-[980px] mx-auto;
+  }
+
+  .main__projects__bottom {
+    @apply w-full flex justify-between;
+  }
+
+  .main__projects__bottom__right {
+    @apply flex flex-col justify-between;
+  }
+
+  .img__1 {
+    @apply w-[850px] h-[600px] row-span-3; 
+  }
+
+  .img__2 {
+    @apply w-[405px] h-[284px];
+  }
+
+  .img__3 {
+    @apply w-[405px] h-[284px];
   }
 
   .main__features {
