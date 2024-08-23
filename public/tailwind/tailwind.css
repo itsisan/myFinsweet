@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: poppins-medium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
   font-family: manrope;
   src: url(../fonts/Manrope-Regular.ttf);
 }
@@ -181,11 +186,11 @@
   }
 
   .main__projects__top__title {
-    @apply text-[48px] font-[600]; 
+    @apply text-[48px] font-[600];
   }
 
   .main__projects__top__more {
-    @apply relative flex items-center justify-between w-[123px] text-[16px] font-[500] cursor-pointer; 
+    @apply relative flex items-center justify-between w-[123px] text-[16px] font-[500] cursor-pointer;
   }
 
   .svg-3 {
@@ -200,18 +205,23 @@
     @apply w-full flex justify-between;
   }
 
+  .main__projects__bottom__left {
+    @apply relative;
+  }
+
   .main__projects__bottom__right {
     @apply flex flex-col justify-between;
   }
 
   .img__1 {
-    @apply w-[870px] h-[600px]; 
+    @apply w-[870px] h-[600px];
   }
 
-  .img__2 {
-    @apply w-[390px] h-[284px];
+  .img__1__content {
+    @apply absolute top-0 w-[396px] h-full bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B];
   }
 
+  .img__2,
   .img__3 {
     @apply w-[390px] h-[284px];
   }
