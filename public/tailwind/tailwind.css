@@ -213,17 +213,37 @@
     @apply flex flex-col justify-between;
   }
 
-  .img__1 {
-    @apply w-[870px] h-[600px];
+  .main__projects__img__1 {
+    @apply w-[870px] h-[600px] cursor-pointer;
   }
 
-  .img__1__content {
-    @apply absolute top-0 w-[396px] h-full bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B];
+  .main__projects__img__1__cover {
+    @apply absolute top-0 left-[-10px] w-[396px] opacity-0 h-full flex flex-col justify-end bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all;
   }
 
-  .img__2,
-  .img__3 {
-    @apply w-[390px] h-[284px];
+  .main__projects__bottom__left:hover .main__projects__img__1__cover {
+    @apply left-[0] opacity-[1];
+  }
+
+  .main__projects__img__1__cover__title {
+    @apply text-[#ffffff] text-[24px] font-[600];
+  }
+
+  .main__projects__img__1__cover__text {
+    @apply text-[#dddde5] text-[16px];
+  }
+
+  .main__projects__img__1__cover__btn {
+    @apply relative w-[135px] flex items-center justify-between text-[#FCD980] text-[16px];
+  }
+
+  .arrow-svg-4 {
+    @apply absolute right-0 transition-all;
+  }
+
+  .main__projects__img__2,
+  .main__projects__img__3 {
+    @apply w-[390px] h-[284px] cursor-pointer;
   }
 
   .main__features {

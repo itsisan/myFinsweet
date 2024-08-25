@@ -1037,27 +1037,74 @@ video {
   justify-content: space-between;
 }
 
-.img__1 {
+.main__projects__img__1 {
   height: 600px;
   width: 870px;
+  cursor: pointer;
 }
 
-.img__1__content {
+.main__projects__img__1__cover {
   position: absolute;
   top: 0px;
+  left: -10px;
+  display: flex;
   height: 100%;
   width: 396px;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   --tw-gradient-from: #1C1E53 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(28 30 83 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #1C1E536B var(--tw-gradient-to-position);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.img__2,
-  .img__3 {
+.main__projects__bottom__left:hover .main__projects__img__1__cover {
+  left: 0;
+  opacity: 1;
+}
+
+.main__projects__img__1__cover__title {
+  font-size: 24px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.main__projects__img__1__cover__text {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(221 221 229 / var(--tw-text-opacity));
+}
+
+.main__projects__img__1__cover__btn {
+  position: relative;
+  display: flex;
+  width: 135px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(252 217 128 / var(--tw-text-opacity));
+}
+
+.arrow-svg-4 {
+  position: absolute;
+  right: 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.main__projects__img__2,
+  .main__projects__img__3 {
   height: 284px;
   width: 390px;
+  cursor: pointer;
 }
 
 .main__features {
@@ -1067,8 +1114,33 @@ video {
   background-color: rgb(244 246 252 / var(--tw-bg-opacity));
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[750px\] {
   height: 750px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .text-\[\#ffffff\] {
@@ -1107,3 +1179,7 @@ video {
 }
 
 /* layer component classes  */
+
+.group:hover .group-hover\:right-\[-5px\] {
+  right: -5px;
+}
