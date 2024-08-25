@@ -210,7 +210,7 @@
   }
 
   .main__projects__bottom__right {
-    @apply flex flex-col justify-between;
+    @apply relative flex flex-col justify-between;
   }
 
   .main__projects__img__1 {
@@ -219,10 +219,6 @@
 
   .main__projects__img__1__cover {
     @apply absolute top-0 left-[-10px] w-[396px] opacity-0 h-full flex flex-col justify-end bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all;
-  }
-
-  .main__projects__bottom__left:hover .main__projects__img__1__cover {
-    @apply left-[0] opacity-[1];
   }
 
   .main__projects__img__1__cover__title {
@@ -244,6 +240,10 @@
   .main__projects__img__2,
   .main__projects__img__3 {
     @apply w-[390px] h-[284px] cursor-pointer;
+  }
+
+  .main__projects__img__2__cover {
+    @apply absolute top-0 w-[390px] h-[284px] bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all;
   }
 
   .main__features {

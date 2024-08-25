@@ -1032,6 +1032,7 @@ video {
 }
 
 .main__projects__bottom__right {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1061,11 +1062,6 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.main__projects__bottom__left:hover .main__projects__img__1__cover {
-  left: 0;
-  opacity: 1;
 }
 
 .main__projects__img__1__cover__title {
@@ -1105,6 +1101,21 @@ video {
   height: 284px;
   width: 390px;
   cursor: pointer;
+}
+
+.main__projects__img__2__cover {
+  position: absolute;
+  top: 0px;
+  height: 284px;
+  width: 390px;
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  --tw-gradient-from: #1C1E53 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(28 30 83 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #1C1E536B var(--tw-gradient-to-position);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .main__features {
@@ -1180,6 +1191,14 @@ video {
 
 /* layer component classes  */
 
-.group:hover .group-hover\:right-\[-5px\] {
+.group\/arrow:hover .group-hover\/arrow\:right-\[-5px\] {
   right: -5px;
+}
+
+.group:hover .group-hover\:left-0 {
+  left: 0px;
+}
+
+.group:hover .group-hover\:opacity-\[1\] {
+  opacity: 1;
 }

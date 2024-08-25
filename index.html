@@ -834,14 +834,18 @@
               </span>
             </div>
             <div class="main__projects__bottom">
-              <div class="main__projects__bottom__left">
+              <div class="main__projects__bottom__left group">
                 <img
                   class="main__projects__img__1"
                   src="./public/PNGs/project-image-1.png"
                   alt=""
                 />
-                <div class="main__projects__img__1__cover">
-                  <div class="w-[300px] h-[300px] flex flex-col gap-[30px] mx-auto">
+                <div
+                  class="main__projects__img__1__cover group-hover:left-0 group-hover:opacity-[1]"
+                >
+                  <div
+                    class="w-[300px] h-[300px] flex flex-col gap-[30px] mx-auto"
+                  >
                     <p class="main__projects__img__1__cover__title">
                       Workhub office Webflow Webflow Design
                     </p>
@@ -850,11 +854,11 @@
                       velit aliquam
                     </p>
                     <a
-                      class="main__projects__img__1__cover__btn group"
+                      class="main__projects__img__1__cover__btn group/arrow"
                       href="case-studies.html"
                     >
                       <span>View project</span>
-                      <span class="arrow-svg-4 group-hover:right-[-5px]">
+                      <span class="arrow-svg-4 group-hover/arrow:right-[-5px]">
                         <svg
                           width="25"
                           height="12"
@@ -873,16 +877,21 @@
                 </div>
               </div>
               <div class="main__projects__bottom__right">
-                <img
-                  class="main__projects__img__2"
-                  src="./public/PNGs/project-image-3.png"
-                  alt=""
-                />
-                <img
-                  class="main__projects__img__3"
-                  src="./public/PNGs/project-image-2.png"
-                  alt=""
-                />
+                <div class="main__projects__bottom__right__top">
+                  <img
+                    class="main__projects__img__2"
+                    src="./public/PNGs/project-image-3.png"
+                    alt=""
+                  />
+                  <div class="main__projects__img__2__cover"></div>
+                </div>
+                <div class="main__projects__bottom__right__bottom">
+                  <img
+                    class="main__projects__img__3"
+                    src="./public/PNGs/project-image-2.png"
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
           </div>
