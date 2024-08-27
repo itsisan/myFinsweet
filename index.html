@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finsweet: Webflow Development, Design, and Product Agency</title>
-    <link href="swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="pagedone/src/css/pagedone.css">
     <link rel="stylesheet" href="./public/css/main.css" />
   </head>
   <body onload="hideLoader()">
@@ -1171,7 +1169,282 @@
             </div>
           </div>
         </div>
-        <div class="main__clients"></div>
+        <div class="main__clients">
+          <div class="main__clients__inner">
+            <div class="main__clients__left">
+              <div class="main__clients__left__title">
+                What our clients say about us
+              </div>
+              <div class="main__clients__left__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+              </div>
+            </div>
+            <div class="main__clients__right">
+              <div class="carousel w-full h-full font-[poppins-medium]">
+                <div
+                  id="slide1"
+                  class="carousel-item relative w-full flex flex-col justify-between"
+                >
+                  <div
+                    class="carusel-comment text-[32px] leading-[45px] font-[500]"
+                  >
+                    "The best agency we’ve worked with so far. They understand
+                    our product and are able to add new features with a great
+                    focus."
+                  </div>
+                  <div
+                    class="carousel-profile w-[300px] flex items-center gap-x-[15px]"
+                  >
+                    <div class="carousel-profile-left">
+                      <div
+                        class="carousel-profile-left-img w-[60px] h-[60px] rounded-[50%]"
+                      >
+                        <img
+                          src="./public/PNGs/profile-image.png"
+                          alt="profile"
+                          class="w-full h-full object-cover rounded-full"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-profile-right">
+                      <div class="carousel-profile-right-name text-[18px]">
+                        Jenny Wilson
+                      </div>
+                      <div
+                        class="carousel-profile-right-designation text-[12px]"
+                      >
+                        Vice President
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-buttons absolute bottom-[25px] right-[120px]">
+                    <div
+                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
+                    >
+                      <a href="#slide3" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0995"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            transform="rotate(-180 24.0995 24)"
+                            fill="white"
+                          />
+                          <path
+                            opacity="0.6"
+                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
+                            fill="#282938"
+                          />
+                        </svg>
+                      </a>
+                      <a href="#slide2" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0997"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            fill="#5239FA"
+                          />
+                          <path
+                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="slide2"
+                  class="carousel-item relative w-full flex flex-col justify-between"
+                >
+                  <div
+                    class="carusel-comment text-[32px] leading-[45px] font-[500]"
+                  >
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    maxime ex corporis sint, consequuntur quasi!"
+                  </div>
+                  <div
+                    class="carousel-profile w-[300px] flex items-center gap-x-[15px]"
+                  >
+                    <div class="carousel-profile-left">
+                      <div
+                        class="carousel-profile-left-img w-[60px] h-[60px] rounded-[50%]"
+                      >
+                        <img
+                          src="./public/PNGs/profile-image-2.png"
+                          alt="profile"
+                          class="w-full h-full object-cover rounded-full"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-profile-right">
+                      <div class="carousel-profile-right-name text-[18px]">
+                        Sara Dixon
+                      </div>
+                      <div
+                        class="carousel-profile-right-designation text-[12px]"
+                      >
+                        Artist
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-buttons absolute bottom-[25px] right-[120px]">
+                    <div
+                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
+                    >
+                      <a href="#slide1" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0995"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            transform="rotate(-180 24.0995 24)"
+                            fill="white"
+                          />
+                          <path
+                            opacity="0.6"
+                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
+                            fill="#282938"
+                          />
+                        </svg>
+                      </a>
+                      <a href="#slide3" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0997"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            fill="#5239FA"
+                          />
+                          <path
+                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  id="slide3"
+                  class="carousel-item relative w-full flex flex-col justify-between transition-all"
+                >
+                  <div
+                    class="carusel-comment text-[32px] leading-[45px] font-[500]"
+                  >
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde, fugiat! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Sit, aliquid."
+                  </div>
+                  <div
+                    class="carousel-profile w-[200px] flex items-center justify-between"
+                  >
+                    <div class="carousel-profile-left">
+                      <div
+                        class="carousel-profile-left-img w-[60px] h-[60px] rounded-[50%]"
+                      >
+                        <img
+                          src="./public/PNGs/profile-image-3.png"
+                          alt="profile"
+                          class="w-full h-full object-cover rounded-full"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-profile-right">
+                      <div class="carousel-profile-right-name text-[18px]">
+                        Sam Lincon
+                      </div>
+                      <div
+                        class="carousel-profile-right-designation text-[12px]"
+                      >
+                        Lawyer
+                      </div>
+                    </div>
+                  </div>
+                  <div class="nav-buttons absolute bottom-[25px] right-[120px]">
+                    <div
+                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
+                    >
+                      <a href="#slide2" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0995"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            transform="rotate(-180 24.0995 24)"
+                            fill="white"
+                          />
+                          <path
+                            opacity="0.6"
+                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
+                            fill="#282938"
+                          />
+                        </svg>
+                      </a>
+                      <a href="#slide1" class="btn btn-circle border-none">
+                        <svg
+                          width="49"
+                          height="48"
+                          viewBox="0 0 49 48"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <ellipse
+                            cx="24.0997"
+                            cy="24"
+                            rx="24.0997"
+                            ry="24"
+                            fill="#5239FA"
+                          />
+                          <path
+                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="mian__FAQ"></div>
         <div class="main__inquiry"></div>
         <div class="main__blog"></div>
@@ -1187,10 +1460,9 @@
     <!-- wrapper -->
 
     <!-- scripts -->
-    <script src="swiper/swiper-bundle.min.js"></script>
-    <script src="pagedone/src/js/pagedone.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="JS/loading.js"></script>
+
     <!-- scripts -->
   </body>
 </html>

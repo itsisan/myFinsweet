@@ -285,4 +285,28 @@
   .main__features__bottom__card__text {
     @apply text-[#696a74] text-[16px];
   }
+
+  .main__clients {
+    @apply flex items-center w-full h-[506px] bg-[#f9fafd] font-[poppins-regular];
+  }
+
+  .main__clients__inner {
+    @apply flex justify-between gap-[50px] w-[85%] h-[250px] mx-auto;
+  }
+
+  .main__clients__left {
+    @apply flex flex-col items-center gap-y-[16px] w-[25%] h-full;
+  }
+
+  .main__clients__left__title {
+    @apply text-[38px] font-[poppins-medium] font-[600] text-[#282938] leading-[50px];
+  }
+
+  .main__clients__left__text {
+    @apply text-[#696a74] leading-[28px];
+  }
+
+  .main__clients__right {
+    @apply w-[67%] h-[250px];
+  }
 }
