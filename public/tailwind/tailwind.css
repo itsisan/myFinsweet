@@ -309,4 +309,40 @@
   .main__clients__right {
     @apply w-[67%] h-[250px];
   }
+
+  .main__FAQ {
+    @apply w-full h-[795px] font-[poppins-medium] flex items-center;
+  }
+
+  .main__FAQ__inner {
+    @apply w-[85%] h-[537px] mx-auto flex justify-between; 
+  }
+
+  .main__FAQ__left {
+    @apply w-[25%];
+  }
+
+  .main__FAQ__right {
+    @apply w-[65%] ;
+  }
+
+  .main__inquiry {
+    @apply w-full h-[690px] flex items-center justify-center font-[poppins-regular];
+  }
+
+  .main__inquiry__inner {
+    @apply w-[85%] h-full flex items-center justify-center bg-[pink] bg-gradient-to-tl;
+  }
+
+  .main__inquiry__left{
+    @apply flex flex-col justify-center items-center gap-y-[20px] w-[50%] h-full bg-[url('../../public/images/contact-image.jfif')] bg-[#1C1E5380] bg-blend-multiply bg-origin-border bg-center bg-cover text-[#ffffff];
+  }
+
+  .main__inquiry__right {
+    @apply flex flex-col justify-between w-[50%] h-full p-[95px] bg-[#1C1E53] text-[#ffffff];
+  }
+
+  .main__inquiry__right__inputs {
+    @apply flex flex-col items-center;
+  }
 }
