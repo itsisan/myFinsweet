@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "pagedone": "^1.2.1",
-    "swiper": "^11.1.10"
+    "pagedone": "^1.2.1"
   }
 }
