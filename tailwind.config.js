@@ -11,7 +11,7 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("tailwind-scrollbar"), require("daisyui")],
   daisyui: {
     themes: [],
   },

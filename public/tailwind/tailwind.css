@@ -315,7 +315,7 @@
   }
 
   .main__FAQ__inner {
-    @apply w-[85%] h-[537px] mx-auto flex justify-between; 
+    @apply w-[85%] h-[537px] mx-auto flex justify-between;
   }
 
   .main__FAQ__left {
@@ -323,7 +323,7 @@
   }
 
   .main__FAQ__right {
-    @apply w-[65%] ;
+    @apply w-[65%];
   }
 
   .main__inquiry {
@@ -334,7 +334,7 @@
     @apply w-[85%] h-full flex items-center justify-center bg-[pink] bg-gradient-to-tl;
   }
 
-  .main__inquiry__left{
+  .main__inquiry__left {
     @apply flex flex-col justify-center items-center gap-y-[20px] w-[50%] h-full bg-[url('../../public/images/contact-image.jfif')] bg-[#1C1E5380] bg-blend-multiply bg-origin-border bg-center bg-cover text-[#ffffff];
   }
 
@@ -344,5 +344,65 @@
 
   .main__inquiry__right__inputs {
     @apply flex flex-col items-center;
+  }
+
+  .main__blog {
+    @apply w-full h-[993px] flex items-center justify-center font-[poppins-medium];
+  }
+
+  .main__blog__inner {
+    @apply w-[85%] h-[737px] mx-auto flex flex-col justify-between;
+  }
+
+  .main__blog__bottom__item {
+    @apply w-[405px] h-full flex flex-col justify-around;
+  }
+
+  .footer {
+    @apply flex flex-col gap-0 w-full h-[489px] font-[poppins-regular];
+  }
+
+  .footer__top {
+    @apply flex w-full h-[80%] bg-[#1C1E53];
+  }
+
+  .footer__top__inner {
+    @apply w-[85%] h-full mx-auto justify-center items-center flex gap-x-[200px];
+  }
+
+  .footer__top__left {
+    @apply w-[50%] flex flex-col justify-between gap-y-[30px] h-full pt-[90px];
+  }
+
+  .footer__top__left__cantact {
+    @apply flex items-center justify-start gap-x-[40px] ps-[40px] w-full h-[95px] bg-[#FCD980];
+  }
+
+  .footer__top__left__cantact__info {
+    @apply flex flex-col gap-y-[10px];
+  }
+
+  .info__title {
+    @apply text-[18px] text-[#282938] font-[600];
+  }
+
+  .info {
+    @apply text-[16px] text-[#524c47] font-[500];
+  }
+
+  .footer__top__right {
+    @apply w-[50%] h-full flex flex-col justify-center gap-y-[50px];
+  }
+
+  .footer__top__right__social__links {
+    @apply flex justify-between w-[144px];
+  }
+
+  .footer__bottom {
+    @apply flex items-center justify-center font-[poppins-medium] w-full h-[20%] text-[16px] text-[#282938];
+  }
+
+  .footer__bottom__inner {
+    @apply w-[85%] flex items-center justify-between;
   }
 }
