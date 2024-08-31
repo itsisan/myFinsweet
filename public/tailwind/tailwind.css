@@ -546,4 +546,82 @@
   .process__bottom__card__bottom {
     @apply flex flex-col gap-y-[15px];
   }
+
+  .main__mission {
+    @apply w-full h-[1022px] bg-[#eef4fa] font-[poppins-regular];
+  }
+
+  .main__mission__top,
+  .main__mission__bottom {
+    @apply flex items-center justify-between w-full h-[335px];
+  }
+
+  .mission__top__content,
+  .mission__bottom__content {
+    @apply flex flex-col h-[228px] justify-between;
+  }
+
+  .mission__content__title {
+    @apply text-[16px] font-[600] text-[#282938];
+  }
+
+  .mission__content__features {
+    @apply text-[38px] text-[#282938] font-[600];
+  }
+
+  .mission__content__text {
+    @apply w-[623px] text-[16px] text-[#646772] leading-[28px];
+  }
+
+  .mission__top__image {
+    @apply w-[515px] h-[336px];
+  }
+
+  .main__benefits {
+    @apply flex items-center justify-center w-full h-[880px] font-[poppins-regular];
+  }
+
+  .main__benefits__top {
+    @apply text-[48px] font-[600] w-[630px] text-center;
+  }
+
+  .main__benefits__center {
+    @apply flex justify-between w-full;
+  }
+
+  .main__benefits__bottom {
+    @apply w-full h-[84px] flex justify-between items-center;
+  }
+
+  .main__team {
+    @apply w-full h-[712px] bg-[#f4f6fc] font-[poppins-regular];
+  }
+
+  .main__team__top {
+    @apply w-full text-[48px] font-[600] text-center;
+  }
+
+  .main__team__bottom {
+    @apply w-full h-[344px] flex justify-between;
+  }
+
+  .team__card__image {
+    @apply w-[170px] h-[170px] rounded-full;
+  }
+
+  .img {
+    @apply w-full h-full object-cover rounded-full;
+  }
+
+  .team__card__name {
+    @apply text-[24px];
+  }
+
+  .team__card__skill {
+    @apply text-[#646772] text-[16px];
+  }
+
+  .team__bottom__card {
+    @apply w-[296px] h-full bg-[#ffffff] flex flex-col justify-center items-center gap-y-[25px];
+  }
 }
