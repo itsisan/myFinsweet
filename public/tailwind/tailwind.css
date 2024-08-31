@@ -110,7 +110,7 @@
   }
 
   .header__bottom__left__p {
-    @apply w-[500px] text-[#BBBBCB];
+    @apply w-[500px] text-[#BBBBCB] leading-[28px];
   }
 
   .header__bottom__left__buttons {
