@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finsweet: Webflow Development, Design, and Product Agency</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/swiper.css">
   </head>
   <body onload="hideLoader()">
     <div class="wrapper">
@@ -18,7 +20,7 @@
         </div>
       </div>
       <!-- loading -->
-       <!-- header  -->
+      <!-- header  -->
       <header class="header">
         <div class="header__top">
           <div class="header__top__inner">
@@ -30,15 +32,13 @@
             <div class="header__top__right">
               <nav class="header__top__nav">
                 <a href="index.html" class="header__top__nav__link">Home</a>
-                <a
-                  href="about.html"
-                  class="header__top__nav__link"
-                  >About us</a
-                >
+                <a href="about.html" class="header__top__nav__link">About us</a>
                 <a href="features.html" class="header__top__nav__link"
                   >Features</a
                 >
-                <a href="pricing.html" class="header__top__nav__link text-[#ffffff]"
+                <a
+                  href="pricing.html"
+                  class="header__top__nav__link text-[#ffffff]"
                   >Pricing</a
                 >
                 <a href="FAQ.html" class="header__top__nav__link">FAQ</a>
@@ -53,7 +53,113 @@
       </header>
       <!-- header  -->
       <!-- main  -->
-      <main class="main"></main>
+      <main class="main">
+        <div class="main_swiper w-[700px] h-[300px]">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+        <div class="main__FAQ">
+          <div class="main__FAQ__inner">
+            <div class="main__FAQ__left">
+              <div class="text-[38px] font-[600]">
+                Frequently asked questions
+              </div>
+              <a href="contact.html" class="text-[18px] text-[#2405F2]"
+                >Contact us for more info</a
+              >
+            </div>
+            <div class="main__FAQ__right">
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title">
+                  <div class="text-[#2405F2]">01</div>
+                  How much time does it take?
+                </div>
+                <div class="collapse-content ps-[90px]">
+                  <p class="collapse-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <hr class="w-full h-[2px]" />
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title">
+                  <div class="text-[#2405F2]">02</div>
+                  What is your class naming convention?
+                </div>
+                <div class="collapse-content ps-[95px]">
+                  <p class="collapse-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <hr class="w-full h-[2px]" />
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title">
+                  <div class="text-[#2405F2]">03</div>
+                  How do you communicate?
+                </div>
+                <div class="collapse-content ps-[95px]">
+                  <p class="collapse-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <hr class="w-full h-[2px]" />
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title">
+                  <div class="text-[#2405F2]">04</div>
+                  I have a bigger project. Can you handle it?
+                </div>
+                <div class="collapse-content ps-[95px]">
+                  <p class="collapse-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <hr class="w-full h-[2px]" />
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title">
+                  <div class="text-[#2405F2]">05</div>
+                  What is your class naming convention?
+                </div>
+                <div class="collapse-content ps-[95px]">
+                  <p class="collapse-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
       <!-- main  -->
       <!-- footer  -->
       <footer class="footer">
@@ -290,6 +396,15 @@
       <!-- footer  -->
     </div>
     <!-- scripts -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="JS/loading.js"></script>
     <!-- scripts -->
