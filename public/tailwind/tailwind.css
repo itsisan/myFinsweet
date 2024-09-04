@@ -30,7 +30,7 @@
   }
 
   img {
-    @apply rounded-[10px];
+    @apply rounded-[10px] w-full h-full object-cover;
   }
 
   .wrapper {
@@ -667,5 +667,25 @@
 
   .pricing__card__button {
     @apply w-[255px] h-[65px] rounded-full text-[#ffffff] text-[16px] bg-[#282938] hover:opacity-[0.9] active:scale-[0.9] transition-all;
+  }
+
+  .main__featured__blog {
+    @apply flex justify-center items-center w-full h-[1110px] font-[poppins-medium];
+  }
+
+  .featured__blog__title {
+    @apply text-[48px] font-[600] w-[950px] text-center;
+  }
+
+  .featured__blog__image {
+    @apply w-full h-[477px];
+  }
+
+  .featured__blog__text {
+    @apply text-[16px] text-[#696a74] w-[830px] text-center;
+  }
+
+  .featured__blog__btn {
+    @apply text-[16px] text-[#2405F2];
   }
 }
