@@ -29,6 +29,10 @@
     @apply scrollbar-thin;
   }
 
+  img {
+    @apply rounded-[10px];
+  }
+
   .wrapper {
     @apply w-full h-full cursor-default;
   }
@@ -50,7 +54,7 @@
   }
 
   .spinner {
-    @apply w-[10px] h-[10px] mx-auto bg-[#BBBBCB] rounded-full transition-all;
+    @apply w-[10px] h-[10px] mx-auto bg-[#BBBBCB] rounded-full transition-transform duration-200;
   }
 
   .sp-1 {
@@ -226,7 +230,7 @@
   }
 
   .main__projects__img__1__cover {
-    @apply absolute top-0 left-[-10px] w-[396px] opacity-0 h-full flex flex-col justify-end bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all;
+    @apply absolute top-0 left-[-10px] w-[396px] opacity-0 h-full flex flex-col justify-end bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all rounded-tl-[10px] rounded-bl-[10px];
   }
 
   .main__projects__img__1__cover__title {
@@ -251,7 +255,7 @@
   }
 
   .main__projects__img__2__cover {
-    @apply flex items-end absolute left-[-5px] top-0 opacity-0 w-[390px] h-[284px] bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all;
+    @apply flex items-end absolute left-[-5px] top-0 opacity-0 w-[390px] h-[284px] bg-gradient-to-tl from-[#1C1E53] to-[#1C1E536B] transition-all rounded-[10px];
   }
 
   .main__projects__img__2__cover__title {
@@ -283,7 +287,7 @@
   }
 
   .main__features__bottom__card {
-    @apply flex flex-col justify-between w-[405px] h-[316px] bg-[#ffffff] px-[50px] py-[60px];
+    @apply flex flex-col justify-between w-[405px] h-[316px] bg-[#ffffff] px-[50px] py-[60px] rounded-[10px];
   }
 
   .main__features__bottom__card__title {
@@ -367,11 +371,11 @@
   }
 
   .main__inquiry__inner {
-    @apply w-[85%] h-full flex items-center justify-center bg-[pink] bg-gradient-to-tl;
+    @apply w-[85%] h-full flex items-center justify-center bg-gradient-to-tl;
   }
 
   .main__inquiry__left {
-    @apply flex flex-col justify-center items-center gap-y-[20px] w-[50%] h-full bg-[url('../../public/images/contact-image.jfif')] bg-[#1C1E5380] bg-blend-multiply bg-origin-border bg-center bg-cover text-[#ffffff];
+    @apply flex flex-col justify-center items-center gap-y-[20px] w-[50%] h-full bg-[url('../../public/images/contact-image.jfif')] bg-[#1C1E5380] bg-blend-multiply bg-origin-border bg-center bg-cover text-[#ffffff] rounded-tl-[10px] rounded-bl-[10px];
   }
 
   .main__inquiry__left__title {
@@ -379,7 +383,7 @@
   }
 
   .main__inquiry__right {
-    @apply flex flex-col justify-between w-[50%] h-full p-[95px] bg-[#1C1E53] text-[#ffffff];
+    @apply flex flex-col justify-between w-[50%] h-full p-[95px] bg-[#1C1E53] text-[#ffffff] rounded-tr-[10px] rounded-br-[10px];
   }
 
   .main__inquiry__right__inputs {
@@ -419,7 +423,7 @@
   }
 
   .main__blog__bottom__item {
-    @apply w-[405px] h-full flex flex-col justify-around;
+    @apply w-[405px] h-full flex flex-col justify-around p-[10px] rounded-[10px] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition;
   }
 
   .main__blog__bottom__item__date {
@@ -507,7 +511,7 @@
   }
 
   .main__goals__top {
-    @apply flex items-center justify-center w-full h-[376px] bg-[#f4f5f5];
+    @apply flex items-center justify-center w-full h-[376px] bg-[#f4f5f5] rounded-tl-[10px] rounded-tr-[10px];
   }
 
   .main__goals__top__content {
@@ -623,5 +627,45 @@
 
   .team__bottom__card {
     @apply w-[296px] h-full bg-[#ffffff] flex flex-col justify-center items-center gap-y-[25px];
+  }
+
+  .main__pricing {
+    @apply w-full h-[950px] mt-[128px] font-[poppins-medium];
+  }
+
+  .main__pricing__top {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  .main__pricing__bottom {
+    @apply flex justify-between w-full h-[745px];
+  }
+
+  .pricing__top__title {
+    @apply text-[48px] font-[600];
+  }
+
+  .pricing__top__text {
+    @apply w-[562px] text-[16px] text-[#646772] leading-[28px] text-center;
+  }
+
+  .pricing__card {
+    @apply flex flex-col justify-between w-[405px] h-full px-[50px] py-[65px] rounded-[10px];
+  }
+
+  .pricing__card__top {
+    @apply flex flex-col gap-y-[20px];
+  }
+
+  .pricing__card__center {
+    @apply flex flex-col gap-y-[20px];
+  }
+
+  .pricing__card__bottom {
+    @apply flex justify-center;
+  }
+
+  .pricing__card__button {
+    @apply w-[255px] h-[65px] rounded-full text-[#ffffff] text-[16px] bg-[#282938] hover:opacity-[0.9] active:scale-[0.9] transition-all;
   }
 }
