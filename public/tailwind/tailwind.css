@@ -665,8 +665,9 @@
     @apply flex justify-center;
   }
 
-  .pricing__card__button {
-    @apply w-[255px] h-[65px] rounded-full text-[#ffffff] text-[16px] bg-[#282938] hover:opacity-[0.9] active:scale-[0.9] transition-all;
+  .pricing__card__button,
+  .contact__submit {
+    @apply w-[255px] h-[65px] rounded-full text-[#ffffff] text-[16px] bg-[#282938] hover:opacity-[0.9] active:scale-[0.9] transition-all cursor-pointer;
   }
 
   .main__featured__blog {
@@ -687,5 +688,58 @@
 
   .featured__blog__btn {
     @apply text-[16px] text-[#2405F2];
+  }
+
+  .main__contact {
+    @apply w-full h-[1095px] flex items-center justify-center font-[poppins-medium];
+  }
+
+  .contact__top {
+    @apply text-center;
+  }
+
+  .contact__title {
+    @apply text-[45px] font-[600];
+  }
+
+  .contact__text {
+    @apply w-[560px] text-[16px] text-[#696a74];
+  }
+
+  .contact__bottom {
+    @apply bg-[#f4f6fc] h-[640px] w-[1061px] p-[65px] rounded-[10px] mx-auto;
+  }
+
+  .contact__label {
+    @apply text-[18px];
+  }
+
+  .contact__input,
+  .contact__input__message {
+    @apply border-[1px] border-[#0000001F] rounded-[10px] placeholder:text-[#000] placeholder:text-[16px] bg-transparent indent-10 outline-none hover:bg-[#ffffff] transition-all;
+  }
+
+  .contact__input {
+    @apply w-[438px] h-[65px];
+  }
+
+  .contact__input__message {
+    @apply relative w-full h-[138px] placeholder:absolute placeholder:top-[20px];
+  }
+
+  .main__blog__body {
+    @apply w-full h-[1600px] mb-[128px];
+  }
+
+  .blog__title {
+    @apply text-[38px] text-[#282938] font-[600];
+  }
+
+  .blog__text {
+    @apply text-[16px] text-[#696a74];
+  }
+
+  .blog__list {
+    @apply list-disc list-inside flex flex-col gap-y-[10px];
   }
 }

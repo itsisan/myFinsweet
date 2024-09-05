@@ -30,11 +30,7 @@
             <div class="header__top__right">
               <nav class="header__top__nav">
                 <a href="index.html" class="header__top__nav__link">Home</a>
-                <a
-                  href="about.html"
-                  class="header__top__nav__link text-[#ffffff]"
-                  >About us</a
-                >
+                <a href="about.html" class="header__top__nav__link">About us</a>
                 <a href="features.html" class="header__top__nav__link"
                   >Features</a
                 >
@@ -53,7 +49,71 @@
       </header>
       <!-- header  -->
       <!-- main  -->
-      <main class="main"></main>
+      <main class="main">
+        <div class="main__contact">
+          <div class="inner flex-col items-center h-[840px]">
+            <div class="contact__top">
+              <div class="contact__title">Contact Us</div>
+              <div class="contact__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore.
+              </div>
+            </div>
+            <div class="contact__bottom">
+              <form action="submit.html" class="w-full h-full flex flex-col justify-between">
+                <div class="flex flex-wrap content-between h-[240px] w-full justify-between">
+                  <div class="flex flex-col gap-y-[10px]">
+                    <label class="contact__label" for="">Name</label>
+                    <input
+                      type="text"
+                      class="contact__input"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-y-[10px]">
+                    <label class="contact__label" for="">Email</label>
+                    <input
+                      type="email"
+                      class="contact__input"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-y-[10px]">
+                    <label class="contact__label" for="">Subject</label>
+                    <input
+                      type="text"
+                      class="contact__input"
+                      placeholder="Provide context"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-y-[10px]">
+                    <label class="contact__label" for="">Subject</label>
+                    <input
+                      type="text"
+                      class="contact__input"
+                      placeholder="Select subject"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-y-[10px]">
+                  <label class="contact__label" for="">Message</label>
+                  <input
+                    type="text"
+                    class="contact__input__message"
+                    placeholder="Write your question here"
+                  />
+                </div>
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="contact__submit"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
       <!-- main  -->
       <!-- footer  -->
       <footer class="footer">

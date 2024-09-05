@@ -636,10 +636,9 @@ html {
 }
 
 @media (hover:hover) {
-  .table tr.hover:hover,
-  .table tr.hover:nth-child(even):hover {
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+  .label a:hover {
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
   }
 }
 
@@ -881,6 +880,19 @@ html {
   }
 }
 
+.label {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .input {
   flex-shrink: 1;
   -webkit-appearance: none;
@@ -935,37 +947,9 @@ html {
   --tw-border-opacity: 0.2;
 }
 
-.table {
-  position: relative;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem);
-  text-align: left;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.table :where(.table-pin-rows thead tr) {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
-.table :where(.table-pin-rows tfoot tr) {
-  position: sticky;
-  bottom: 0px;
-  z-index: 1;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
-.table :where(.table-pin-cols tr th) {
-  position: sticky;
-  left: 0px;
-  right: 0px;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+.btm-nav > * .label {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1282,12 +1266,6 @@ details.collapse summary::-webkit-details-marker {
   outline-offset: 2px;
 }
 
-.mockup-phone .display {
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: -25px;
-}
-
 .mockup-browser .mockup-browser-toolbar .input {
   position: relative;
   margin-left: auto;
@@ -1413,45 +1391,6 @@ details.collapse summary::-webkit-details-marker {
   }
 }
 
-.table:where([dir="rtl"], [dir="rtl"] *) {
-  text-align: right;
-}
-
-.table :where(th, td) {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  vertical-align: middle;
-}
-
-.table tr.active,
-  .table tr.active:nth-child(even),
-  .table-zebra tbody tr:nth-child(even) {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.table :where(thead tr, tbody tr:not(:last-child), tbody tr:first-child:last-child) {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-bottom-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
-}
-
-.table :where(thead, tfoot) {
-  white-space: nowrap;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-  color: var(--fallback-bc,oklch(var(--bc)/0.6));
-}
-
-.table :where(tfoot) {
-  border-top-width: 1px;
-  --tw-border-opacity: 1;
-  border-top-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
-}
-
 @keyframes toast-pop {
   0% {
     transform: scale(0.9);
@@ -1462,10 +1401,6 @@ details.collapse summary::-webkit-details-marker {
     transform: scale(1);
     opacity: 1;
   }
-}
-
-.artboard.phone {
-  width: 320px;
 }
 
 .btn-circle:where(.btn-xs) {
@@ -3002,9 +2937,11 @@ img {
   justify-content: center;
 }
 
-.pricing__card__button {
+.pricing__card__button,
+  .contact__submit {
   height: 65px;
   width: 255px;
+  cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(40 41 56 / var(--tw-bg-opacity));
@@ -3016,11 +2953,13 @@ img {
   transition-duration: 150ms;
 }
 
-.pricing__card__button:hover {
+.pricing__card__button:hover,
+  .contact__submit:hover {
   opacity: 0.9;
 }
 
-.pricing__card__button:active {
+.pricing__card__button:active,
+  .contact__submit:active {
   --tw-scale-x: 0.9;
   --tw-scale-y: 0.9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3059,6 +2998,127 @@ img {
   font-size: 16px;
   --tw-text-opacity: 1;
   color: rgb(36 5 242 / var(--tw-text-opacity));
+}
+
+.main__contact {
+  display: flex;
+  height: 1095px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins-medium;
+}
+
+.contact__top {
+  text-align: center;
+}
+
+.contact__title {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.contact__text {
+  width: 560px;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(105 106 116 / var(--tw-text-opacity));
+}
+
+.contact__bottom {
+  margin-left: auto;
+  margin-right: auto;
+  height: 640px;
+  width: 1061px;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 246 252 / var(--tw-bg-opacity));
+  padding: 65px;
+}
+
+.contact__label {
+  font-size: 18px;
+}
+
+.contact__input,
+  .contact__input__message {
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #0000001F;
+  background-color: transparent;
+  text-indent: 2.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.contact__input::-moz-placeholder, .contact__input__message::-moz-placeholder {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.contact__input::placeholder,
+  .contact__input__message::placeholder {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.contact__input:hover,
+  .contact__input__message:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.contact__input {
+  height: 65px;
+  width: 438px;
+}
+
+.contact__input__message {
+  position: relative;
+  height: 138px;
+  width: 100%;
+}
+
+.contact__input__message::-moz-placeholder {
+  position: absolute;
+  top: 20px;
+}
+
+.contact__input__message::placeholder {
+  position: absolute;
+  top: 20px;
+}
+
+.main__blog__body {
+  margin-bottom: 128px;
+  height: 1600px;
+  width: 100%;
+}
+
+.blog__title {
+  font-size: 38px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(40 41 56 / var(--tw-text-opacity));
+}
+
+.blog__text {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(105 106 116 / var(--tw-text-opacity));
+}
+
+.blog__list {
+  display: flex;
+  list-style-position: inside;
+  list-style-type: disc;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .collapse {
@@ -3105,10 +3165,6 @@ img {
   top: 50%;
 }
 
-.isolate {
-  isolation: isolate;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -3122,24 +3178,12 @@ img {
   margin-left: 50px;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
 
-.table {
-  display: table;
-}
-
 .grid {
   display: grid;
-}
-
-.contents {
-  display: contents;
 }
 
 .h-\[1360px\] {
@@ -3148,6 +3192,10 @@ img {
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[240px\] {
+  height: 240px;
 }
 
 .h-\[268px\] {
@@ -3160,6 +3208,10 @@ img {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[310px\] {
+  height: 310px;
 }
 
 .h-\[336px\] {
@@ -3188,6 +3240,10 @@ img {
 
 .h-\[800px\] {
   height: 800px;
+}
+
+.h-\[840px\] {
+  height: 840px;
 }
 
 .h-\[857px\] {
@@ -3222,6 +3278,10 @@ img {
   width: 547px;
 }
 
+.w-\[60\%\] {
+  width: 60%;
+}
+
 .w-\[600px\] {
   width: 600px;
 }
@@ -3253,6 +3313,14 @@ img {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.content-between {
+  align-content: space-between;
 }
 
 .items-center {
@@ -3295,6 +3363,10 @@ img {
 
 .gap-y-\[100px\] {
   row-gap: 100px;
+}
+
+.gap-y-\[10px\] {
+  row-gap: 10px;
 }
 
 .gap-y-\[15px\] {
@@ -3384,6 +3456,10 @@ img {
   font-family: poppins-medium;
 }
 
+.font-\[poppins-regular\] {
+  font-family: poppins-regular;
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -3446,6 +3522,11 @@ img {
 .text-\[\#646772\] {
   --tw-text-opacity: 1;
   color: rgb(100 103 114 / var(--tw-text-opacity));
+}
+
+.text-\[\#6650f6\] {
+  --tw-text-opacity: 1;
+  color: rgb(102 80 246 / var(--tw-text-opacity));
 }
 
 .text-\[\#696a74\] {
