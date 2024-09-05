@@ -478,7 +478,8 @@
     @apply w-[50%] h-full flex flex-col justify-center gap-y-[50px];
   }
 
-  .footer__top__right__social__links {
+  .footer__top__right__social__links,
+  .work__hero__social__links {
     @apply flex justify-between w-[144px];
   }
 
@@ -741,5 +742,57 @@
 
   .blog__list {
     @apply list-disc list-inside flex flex-col gap-y-[10px];
+  }
+
+  .main__work__hero {
+    @apply w-full h-[415px] bg-[#f4f6fc] font-[poppins-medium] flex flex-col justify-center items-center text-center gap-y-[20px];
+  }
+
+  .work__hero__title {
+    @apply text-[48px] font-[600] text-[#282938];
+  }
+
+  .work__hero__text {
+    @apply w-[735px] text-[#666773] text-[16px];
+  }
+
+  .work__hero__social__links {
+    @apply mt-[20px];
+  }
+
+  .main__work__category {
+    @apply h-[2100px] flex flex-col justify-center gap-y-[20px] items-center font-[poppins-medium];
+  }
+
+  .work__nav {
+    @apply flex gap-[20px] text-[#696a74] text-[16px];
+  }
+
+  .work__cards__section {
+    @apply grid grid-cols-2 w-[85%] h-[1910px] mx-auto justify-items-center items-center;
+  }
+
+  .main__work__card {
+    @apply w-[620px] h-[575px] flex flex-col justify-between;
+  }
+
+  .work__card__image {
+    @apply w-full h-[380px];
+  }
+
+  .work__card__title {
+    @apply text-[38px] text-[#282938] font-[600];
+  }
+
+  .work__card__text {
+    @apply text-[#666773] text-[16px];
+  }
+
+  .work__card__btn {
+    @apply flex items-center relative w-[130px];
+  }
+
+  .arrow-svg-6 {
+    @apply absolute right-0 group-hover:right-[-5px] transition-all;
   }
 }
