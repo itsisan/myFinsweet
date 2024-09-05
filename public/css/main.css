@@ -3228,8 +3228,135 @@ img {
   right: -5px;
 }
 
+.work__bottom {
+  height: 450px;
+  width: 100%;
+  font-family: poppins-medium;
+}
+
+.work__bottom__center {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 100%;
+  width: 650px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+  text-align: center;
+}
+
+.work__bottom__title {
+  font-size: 48px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(40 41 56 / var(--tw-text-opacity));
+}
+
+.work__bottom__text {
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(102 103 115 / var(--tw-text-opacity));
+}
+
+.work__bottom__btn {
+  height: 65px;
+  width: 230px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 217 128 / var(--tw-bg-opacity));
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 65px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.work__bottom__btn:hover {
+  background-color: #fcd980e1;
+}
+
+.work__bottom__btn:active {
+  --tw-scale-x: 0.9;
+  --tw-scale-y: 0.9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.case__studies__top {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 128px;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.case__studies__info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.case__studies__article {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 128px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.case__studies__list {
+  display: flex;
+  list-style-position: inside;
+  list-style-type: disc;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 16px;
+  --tw-text-opacity: 1;
+  color: rgb(105 106 116 / var(--tw-text-opacity));
+}
+
+.case__studies__title {
+  width: 645px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.case__studies__text {
+  font-size: 16px;
+  line-height: 30px;
+  --tw-text-opacity: 1;
+  color: rgb(105 106 116 / var(--tw-text-opacity));
+}
+
+.case__studies__keywords {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 112px;
+  margin-bottom: 112px;
+  display: flex;
+  height: 85px;
+  width: 70%;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(105 106 116 / var(--tw-text-opacity));
+}
+
 .collapse {
   visibility: collapse;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .absolute {
@@ -3238,6 +3365,10 @@ img {
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .bottom-\[70px\] {
@@ -3393,6 +3524,10 @@ img {
   width: 600px;
 }
 
+.w-\[645px\] {
+  width: 645px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -3492,6 +3627,10 @@ img {
   row-gap: 70px;
 }
 
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -3516,6 +3655,11 @@ img {
 .bg-\[\#FCD980\] {
   --tw-bg-opacity: 1;
   background-color: rgb(252 217 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#bfbfc4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 191 196 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f4f6fc\] {
@@ -3621,9 +3765,19 @@ img {
   color: rgb(36 5 242 / var(--tw-text-opacity));
 }
 
+.text-\[\#2405f2\] {
+  --tw-text-opacity: 1;
+  color: rgb(36 5 242 / var(--tw-text-opacity));
+}
+
 .text-\[\#282938\] {
   --tw-text-opacity: 1;
   color: rgb(40 41 56 / var(--tw-text-opacity));
+}
+
+.text-\[\#60606c\] {
+  --tw-text-opacity: 1;
+  color: rgb(96 96 108 / var(--tw-text-opacity));
 }
 
 .text-\[\#646772\] {
