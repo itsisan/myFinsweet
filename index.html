@@ -20,7 +20,7 @@
       </div>
       <!-- loading -->
       <!-- header -->
-      <header class="header h-[800px]">
+      <header class="header h-[800px] relative">
         <div class="header__top">
           <div class="header__top__inner">
             <div class="header__top__left">
@@ -49,6 +49,21 @@
                 >Contact us</a
               >
             </div>
+            <svg
+              class="bars md:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+              fill="white"
+              cursor="pointer"
+            >
+              <path
+                d="M 6 9 A 2.0002 2.0002 0 1 0 6 13 L 42 13 A 2.0002 2.0002 0 1 0 42 9 L 6 9 z M 6 22 A 2.0002 2.0002 0 1 0 6 26 L 42 26 A 2.0002 2.0002 0 1 0 42 22 L 6 22 z M 6 35 A 2.0002 2.0002 0 1 0 6 39 L 42 39 A 2.0002 2.0002 0 1 0 42 35 L 6 35 z"
+              ></path>
+            </svg>
           </div>
         </div>
         <div class="header__bottom">
@@ -64,9 +79,9 @@
               <a href="work.html" class="header__bottom__primary__btn"
                 >View our work</a
               >
-              <a href="pricing.html" class="header__bottom__text__btn">
+              <a href="pricing.html" class="header__bottom__text__btn group">
                 <span>View Pricing</span>
-                <span class="arrow-svg-1">
+                <span class="arrow-svg-1 group-hover:right-[-55px]">
                   <svg
                     width="25"
                     height="12"
@@ -573,6 +588,36 @@
             </svg>
           </div>
         </div>
+        <div class="mobile__menu">
+          <nav class="mobile__menu__nav">
+            <div class="menu__nav__items">
+              <svg
+                class="times flex self-end"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 64 64"
+                fill="white"
+                cursor="pointer"
+              >
+                <path
+                  d="M 16 14 C 15.488 14 14.976938 14.194937 14.585938 14.585938 C 13.804937 15.366937 13.804937 16.633063 14.585938 17.414062 L 29.171875 32 L 14.585938 46.585938 C 13.804938 47.366938 13.804937 48.633063 14.585938 49.414062 C 14.976937 49.805062 15.488 50 16 50 C 16.512 50 17.023062 49.805062 17.414062 49.414062 L 32 34.828125 L 46.585938 49.414062 C 47.366938 50.195063 48.633063 50.195062 49.414062 49.414062 C 50.195063 48.633062 50.195062 47.366937 49.414062 46.585938 L 34.828125 32 L 49.414062 17.414062 C 50.195063 16.633063 50.195062 15.366938 49.414062 14.585938 C 48.633062 13.804938 47.366937 13.804938 46.585938 14.585938 L 32 29.171875 L 17.414062 14.585938 C 17.023062 14.194938 16.512 14 16 14 z"
+                ></path>
+              </svg>
+              <a href="index.html" class="header__top__nav__link">Home</a>
+              <a href="about.html" class="header__top__nav__link">About us</a>
+              <a href="features.html" class="header__top__nav__link"
+                >Features</a
+              >
+              <a href="pricing.html" class="header__top__nav__link">Pricing</a>
+              <a href="FAQ.html" class="header__top__nav__link">FAQ</a>
+              <a href="blog.html" class="header__top__nav__link">Blog</a>
+              <a href="contact.html" class="text-[#ffffff]">Contact us</a>
+            </div>
+          </nav>
+        </div>
       </header>
       <!-- header -->
       <!-- main -->
@@ -585,9 +630,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor.
               </p>
-              <a href="work.html" class="main__work__left__btn">
+              <a href="work.html" class="main__work__left__btn group">
                 <span>Get in touch with us</span>
-                <span class="arro-svg-2">
+                <span class="arrow-svg-2 group-hover:right-[-5px]">
                   <svg
                     width="25"
                     height="12"
@@ -815,9 +860,12 @@
           <div class="main__projects__inner">
             <div class="main__projects__top">
               <span class="main__projects__top__title">View our projects</span>
-              <a href="case-studies.html" class="main__projects__top__more">
+              <a
+                href="case-studies.html"
+                class="main__projects__top__more group"
+              >
                 <span>View More</span>
-                <span class="arrow-svg-3">
+                <span class="arrow-svg-3 group-hover:right-[5px]">
                   <svg
                     width="25"
                     height="12"
@@ -1168,8 +1216,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="main__clients">
+        </div> 
+         <div class="main__clients">
           <div class="main__clients__inner">
             <div class="main__clients__left">
               <div class="main__clients__left__title">
@@ -1399,7 +1447,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
         <div class="main__FAQ">
           <div class="main__FAQ__inner">
             <div class="main__FAQ__left">
@@ -1414,7 +1462,7 @@
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title">
-                  <div class="text-[#2405F2]">01</div>
+                  <div class="text-[#2405F2] max-[450px]:text-[18px]">01</div>
                   How much time does it take?
                 </div>
                 <div class="collapse-content ps-[90px]">
@@ -1429,7 +1477,7 @@
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title">
-                  <div class="text-[#2405F2]">02</div>
+                  <div class="text-[#2405F2] max-[450px]:text-[18px]">02</div>
                   What is your class naming convention?
                 </div>
                 <div class="collapse-content ps-[95px]">
@@ -1444,7 +1492,7 @@
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title">
-                  <div class="text-[#2405F2]">03</div>
+                  <div class="text-[#2405F2] max-[450px]:text-[18px]">03</div>
                   How do you communicate?
                 </div>
                 <div class="collapse-content ps-[95px]">
@@ -1459,7 +1507,7 @@
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title">
-                  <div class="text-[#2405F2]">04</div>
+                  <div class="text-[#2405F2] max-[450px]:text-[18px]">04</div>
                   I have a bigger project. Can you handle it?
                 </div>
                 <div class="collapse-content ps-[95px]">
@@ -1474,7 +1522,7 @@
               <div class="collapse collapse-plus">
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title">
-                  <div class="text-[#2405F2]">05</div>
+                  <div class="text-[#2405F2] max-[450px]:text-[18px]">05</div>
                   What is your class naming convention?
                 </div>
                 <div class="collapse-content ps-[95px]">
@@ -1494,7 +1542,7 @@
               <div class="main__inquiry__left__title">
                 Building stellar websites for early startups
               </div>
-              <div class="w-[450px] text-[16px]">
+              <div class="w-[450px] text-[16px] max-[450px]:w-[90%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua ut
                 enim.
@@ -1734,7 +1782,9 @@
                   </defs>
                 </svg>
               </span>
-              <p class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px]">
+              <p
+                class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project and improve your
                 online presence.
               </p>
@@ -1750,10 +1800,14 @@
               </div>
             </div>
             <div class="footer__top__right">
-              <div class="text-[#ffffff] font-[600] text-[48px]">
+              <div
+                class="text-[#ffffff] font-[600] text-[48px] leading-[100px]"
+              >
                 Lets Talk!
               </div>
-              <p class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px]">
+              <p
+                class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project, improve your online
                 presence and help with your UX/UI design challenges.
               </p>
@@ -1884,7 +1938,9 @@
           <div class="footer__bottom__inner">
             <div class="footer__bottom__left">Copyright 2021, Finsweet.com</div>
             <div class="footer__bottom__right">
-              <nav class="flex gap-x-[32px]">
+              <nav
+                class="flex flex-wrap gap-x-[30px] gap-y-[10px] max-[450px]:flex-col max-[450px]:text-center"
+              >
                 <a href="index.html" class="hover:scale-[1.1] transition-all"
                   >Home</a
                 >
@@ -1915,6 +1971,7 @@
     <!-- scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="JS/loading.js"></script>
+    <script src="JS/mobile-menu.js"></script>
     <!-- scripts -->
   </body>
 </html>

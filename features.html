@@ -19,7 +19,7 @@
       </div>
       <!-- loading -->
       <!-- header  -->
-      <header class="header h-[800px]">
+      <header class="header h-[800px] relative">
         <div class="header__top">
           <div class="header__top__inner">
             <div class="header__top__left">
@@ -29,12 +29,12 @@
             </div>
             <div class="header__top__right">
               <nav class="header__top__nav">
-                <a href="index.html" class="header__top__nav__link">Home</a>
                 <a
-                  href="about.html"
+                  href="index.html"
                   class="header__top__nav__link"
-                  >About us</a
+                  >Home</a
                 >
+                <a href="about.html" class="header__top__nav__link">About us</a>
                 <a href="features.html" class="header__top__nav__link text-[#ffffff]"
                   >Features</a
                 >
@@ -48,6 +48,21 @@
                 >Contact us</a
               >
             </div>
+            <svg
+              class="bars md:hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+              fill="white"
+              cursor="pointer"
+            >
+              <path
+                d="M 6 9 A 2.0002 2.0002 0 1 0 6 13 L 42 13 A 2.0002 2.0002 0 1 0 42 9 L 6 9 z M 6 22 A 2.0002 2.0002 0 1 0 6 26 L 42 26 A 2.0002 2.0002 0 1 0 42 22 L 6 22 z M 6 35 A 2.0002 2.0002 0 1 0 6 39 L 42 39 A 2.0002 2.0002 0 1 0 42 35 L 6 35 z"
+              ></path>
+            </svg>
           </div>
         </div>
         <div class="header__bottom">
@@ -659,6 +674,36 @@
             </svg>
           </div>
         </div>
+        <div class="mobile__menu">
+          <nav class="mobile__menu__nav">
+            <div class="menu__nav__items">
+              <svg
+                class="times flex self-end"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 64 64"
+                fill="white"
+                cursor="pointer"
+              >
+                <path
+                  d="M 16 14 C 15.488 14 14.976938 14.194937 14.585938 14.585938 C 13.804937 15.366937 13.804937 16.633063 14.585938 17.414062 L 29.171875 32 L 14.585938 46.585938 C 13.804938 47.366938 13.804937 48.633063 14.585938 49.414062 C 14.976937 49.805062 15.488 50 16 50 C 16.512 50 17.023062 49.805062 17.414062 49.414062 L 32 34.828125 L 46.585938 49.414062 C 47.366938 50.195063 48.633063 50.195062 49.414062 49.414062 C 50.195063 48.633062 50.195062 47.366937 49.414062 46.585938 L 34.828125 32 L 49.414062 17.414062 C 50.195063 16.633063 50.195062 15.366938 49.414062 14.585938 C 48.633062 13.804938 47.366937 13.804938 46.585938 14.585938 L 32 29.171875 L 17.414062 14.585938 C 17.023062 14.194938 16.512 14 16 14 z"
+                ></path>
+              </svg>
+              <a href="index.html" class="header__top__nav__link">Home</a>
+              <a href="about.html" class="header__top__nav__link">About us</a>
+              <a href="features.html" class="header__top__nav__link"
+                >Features</a
+              >
+              <a href="pricing.html" class="header__top__nav__link">Pricing</a>
+              <a href="FAQ.html" class="header__top__nav__link">FAQ</a>
+              <a href="blog.html" class="header__top__nav__link">Blog</a>
+              <a href="contact.html" class="text-[#ffffff]">Contact us</a>
+            </div>
+          </nav>
+        </div>
       </header>
       <!-- header  -->
       <!-- main  -->
@@ -1053,10 +1098,13 @@
                 <div class="mission__top__content flex flex-col gap-y-[20px]">
                   <span class="mission__content__title">Use Client-first</span>
                   <div class="mission__content__features w-[500px]">
-                    Top agencies and freelancers around the world use Client-first
+                    Top agencies and freelancers around the world use
+                    Client-first
                   </div>
                   <p class="mission__content__text w-[500px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                   </p>
                 </div>
                 <div class="mission__top__image h-[400px]">
@@ -1069,27 +1117,29 @@
               </div>
             </div>
             <div class="main__mission__top w-full bg-[#f4f6fc] h-[654px]">
-            <div class="inner items-center flex-row-reverse">
-              <div class="mission__top__content flex flex-col gap-y-[20px]">
-                <span class="mission__content__title">Free Revision Rounds</span>
-                <div class="mission__content__features w-[500px]">
-                  Get free Revisions and one week of free maintenance
+              <div class="inner items-center flex-row-reverse">
+                <div class="mission__top__content flex flex-col gap-y-[20px]">
+                  <span class="mission__content__title"
+                    >Free Revision Rounds</span
+                  >
+                  <div class="mission__content__features w-[500px]">
+                    Get free Revisions and one week of free maintenance
+                  </div>
+                  <p class="mission__content__text w-[500px]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
                 </div>
-                <p class="mission__content__text w-[500px]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <div class="mission__top__image h-[400px]">
+                  <img
+                    src="./public/PNGs/features-2.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div class="mission__top__image h-[400px]">
-                <img
-                  src="./public/PNGs/features-2.png"
-                  alt=""
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
             </div>
             <div class="main__mission__top w-full h-[654px]">
               <div class="inner items-center">
@@ -1100,9 +1150,9 @@
                   </div>
                   <p class="mission__content__text w-[500px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                 </div>
                 <div class="mission__top__image h-[400px]">
@@ -1115,7 +1165,7 @@
               </div>
             </div>
             <div class="main__mission__top w-full h-[654px] bg-[#fffcf3]">
-              <div class="inner items-center flex-row-reverse ">
+              <div class="inner items-center flex-row-reverse">
                 <div class="mission__top__content flex flex-col gap-y-[20px]">
                   <span class="mission__content__title">Quick Delivery</span>
                   <div class="mission__content__features w-[600px]">
@@ -1123,9 +1173,9 @@
                   </div>
                   <p class="mission__content__text w-[600px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
                 </div>
                 <div class="mission__top__image h-[400px]">
@@ -1226,7 +1276,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </main>
       <!-- main  -->
       <!-- footer  -->
@@ -1466,6 +1516,7 @@
     <!-- scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="JS/loading.js"></script>
+    <script src="JS/mobile-menu.js"></script>
     <!-- scripts -->
   </body>
 </html>
