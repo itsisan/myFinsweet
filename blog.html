@@ -100,7 +100,7 @@
       <!-- main  -->
       <main class="main">
         <div class="main__featured__blog">
-          <div class="inner flex-col h-[857px] items-center justify-between">
+          <div class="inner flex-col h-[857px] items-center justify-between max-[1200px]:w-full max-[740px]:h-full max-[740px]:gap-y-[20px]">
             <div class="featured__blog__title">
               A UX Case Study on Creating a Studious Environment for Students
             </div>
@@ -109,7 +109,7 @@
               <span>Posted on 27th January 2021</span>
             </div>
             <div class="featured__blog__image">
-              <img src="./public/images/featured-blog.jfif" alt="blog" />
+              <img src="./public/images/featured-blog.jfif" alt="blog" class="max-[1200px]:rounded-[0]" />
             </div>
             <p class="featured__blog__text">
               Apparently we had reached a great height in the atmosphere, for
@@ -120,14 +120,10 @@
             <a href="read-blog.html" class="featured__blog__btn">Read more</a>
           </div>
         </div>
-        <div
-          class="main__blog h-[1360px] flex items-center justify-center mb-[128px]"
-        >
+        <div class="main__blog h-[1360px] flex items-center justify-center mb-[128px] max-[1440px]:h-full">
           <div class="main__blog__inner flex-col h-full">
             <div class="main__blog__top text-center">Our blog</div>
-            <div
-              class="main__blog__bottom h-full grid grid-cols-3 justify-items-center gap-y-[20px]"
-            >
+            <div class="main__blog__bottom h-full grid grid-cols-3 justify-items-center gap-y-[20px] max-[1440px]:grid-cols-2 max-[880px]:grid-cols-1">
               <div class="main__blog__bottom__item">
                 <div class="main__blog__bottom__item__img">
                   <img src="./public/PNGs/featured-blog-1.png" alt="blog" />
@@ -350,7 +346,7 @@
       </main>
       <!-- main  -->
       <!-- footer  -->
-      <footer class="footer">
+     <footer class="footer">
         <div class="footer__top">
           <div class="footer__top__inner">
             <div class="footer__top__left">
@@ -407,7 +403,9 @@
                   </defs>
                 </svg>
               </span>
-              <p class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px]">
+              <p
+                class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project and improve your
                 online presence.
               </p>
@@ -423,10 +421,14 @@
               </div>
             </div>
             <div class="footer__top__right">
-              <div class="text-[#ffffff] font-[600] text-[48px]">
+              <div
+                class="text-[#ffffff] font-[600] text-[48px] leading-[100px]"
+              >
                 Lets Talk!
               </div>
-              <p class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px]">
+              <p
+                class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project, improve your online
                 presence and help with your UX/UI design challenges.
               </p>
@@ -557,7 +559,9 @@
           <div class="footer__bottom__inner">
             <div class="footer__bottom__left">Copyright 2021, Finsweet.com</div>
             <div class="footer__bottom__right">
-              <nav class="flex gap-x-[32px]">
+              <nav
+                class="flex flex-wrap gap-x-[30px] gap-y-[10px] max-[450px]:flex-col max-[450px]:text-center"
+              >
                 <a href="index.html" class="hover:scale-[1.1] transition-all"
                   >Home</a
                 >

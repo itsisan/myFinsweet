@@ -102,7 +102,7 @@
       <!-- main  -->
       <main class="main">
         <div class="main__pricing">
-          <div class="inner h-full flex-col justify-between">
+          <div class="inner h-full flex-col justify-between max-[1440px]:h-full max-[1440px]:gap-y-[40px]">
             <div class="main__pricing__top">
               <div class="pricing__top__title">Our Pricing Plans</div>
               <div class="pricing__top__text">
@@ -324,7 +324,7 @@
                 </div>
               </div>
               <div
-                class="pricing__card relative bg-[#1C1E53] justify-start gap-y-[70px]"
+                class="pricing__card relative bg-[#1C1E53] justify-start gap-y-[70px] max-[1440px]:h-[700px]"
               >
                 <div class="pricing__card__top">
                   <div class="flex items-center gap-x-[10px]">
@@ -519,7 +519,7 @@
                     <span class="text-[16px]">Unlimited users</span>
                   </div>
                 </div>
-                <div class="absolute left-0 top-0 w-full">
+                <div class="absolute left-0 top-0 w-full max-[740px]:hidden">
                   <svg
                     width="406"
                     height="745"
@@ -892,7 +892,7 @@
       </main>
       <!-- main  -->
       <!-- footer  -->
-      <footer class="footer">
+     <footer class="footer">
         <div class="footer__top">
           <div class="footer__top__inner">
             <div class="footer__top__left">
@@ -949,7 +949,9 @@
                   </defs>
                 </svg>
               </span>
-              <p class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px]">
+              <p
+                class="text-[16px] text-[#d2d2dd] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project and improve your
                 online presence.
               </p>
@@ -965,10 +967,14 @@
               </div>
             </div>
             <div class="footer__top__right">
-              <div class="text-[#ffffff] font-[600] text-[48px]">
+              <div
+                class="text-[#ffffff] font-[600] text-[48px] leading-[100px]"
+              >
                 Lets Talk!
               </div>
-              <p class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px]">
+              <p
+                class="text-[#d2d2dd] text-[16px] w-[400px] leading-[28px] max-[970px]:w-full"
+              >
                 We are always open to discuss your project, improve your online
                 presence and help with your UX/UI design challenges.
               </p>
@@ -1099,7 +1105,9 @@
           <div class="footer__bottom__inner">
             <div class="footer__bottom__left">Copyright 2021, Finsweet.com</div>
             <div class="footer__bottom__right">
-              <nav class="flex gap-x-[32px]">
+              <nav
+                class="flex flex-wrap gap-x-[30px] gap-y-[10px] max-[450px]:flex-col max-[450px]:text-center"
+              >
                 <a href="index.html" class="hover:scale-[1.1] transition-all"
                   >Home</a
                 >
