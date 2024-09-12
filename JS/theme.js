@@ -14,7 +14,7 @@ toggle_txt.addEventListener("click", function () {
   if (toggle_txt.textContent === "Light") {
     toggle_txt.textContent = "Dark";
     toggle_txt.style.textAlign = "left";
-    toggle_circle.style.left = "45px";
+    toggle_circle.style.left = "55px";
     toggle_sun.style.display = "none";
     toggle_moon.style.display = "block";
   } else {
