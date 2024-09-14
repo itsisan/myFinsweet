@@ -379,6 +379,10 @@
     @apply absolute bottom-[25px] right-[120px] max-[450px]:bottom-[60px];
   }
 
+  .swiper-buttons-wrapper {
+    @apply absolute w-[110px] bottom-[30px] right-[150px] flex flex-row-reverse justify-center max-[940px]:right-[50px] max-[480px]:right-[10px];
+  }
+
   .main__FAQ {
     @apply w-full h-[795px] font-[poppins-medium] flex items-center dark:bg-[#0f0f0f];
   }
@@ -481,7 +485,7 @@
   }
 
   .main__blog__bottom__item__text {
-    @apply text-[16px] text-[#696a74] font-[poppins-regular] max-[640px]:text-[14px] dark:text-[#bec0c4]  ;
+    @apply text-[16px] text-[#696a74] font-[poppins-regular] max-[640px]:text-[14px] dark:text-[#bec0c4];
   }
 
   .main__blog__bottom__item__more__btn {
@@ -863,7 +867,7 @@
     @apply flex items-center relative w-[130px] dark:text-[#ffffff];
   }
 
-  .work__card__btn path{
+  .work__card__btn path {
     @apply dark:fill-[#ffffff];
   }
 
@@ -918,4 +922,8 @@
   .case__studies__keywords {
     @apply w-[70%] h-[85px] flex flex-col justify-between mx-auto mt-[112px] mb-[112px] text-[#696a74] text-[18px] cursor-pointer max-[740px]:w-[90%] max-[1200px]:h-full;
   }
+}
+
+.cookies__wrapper {
+  @apply font-[poppins-medium] fixed w-[600px] h-[250px] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none;
 }

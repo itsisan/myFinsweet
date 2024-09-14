@@ -10,7 +10,7 @@
   </head>
   <body onload="hideLoader()">
     <!-- wrapper -->
-    <div class="wrapper dark:bg-[#0f0f0f]">
+    <div class="wrapper dark:bg-[#0f0f0f] relative">
       <!-- loading -->
       <div class="page-loader">
         <div class="page-loader-text">Loading</div>
@@ -1401,7 +1401,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-buttons-wrapper absolute w-[110px] bottom-[30px] right-[150px] flex flex-row-reverse justify-center max-[940px]:right-[50px] max-[480px]:right-[10px]">
+                <div class="swiper-buttons-wrapper">
                   <div class="swiper-button-next w-[40px]">
                     <svg
                       width="49"
@@ -1965,6 +1965,34 @@
         </div>
       </footer>
       <!-- footer -->
+      <div class="cookies__wrapper" id="cookies__wrapper">
+        <span class="text-[16px]">🍪 Yes, we use cookies</span>
+        <p>
+          This website utilizes cookies to enable essential site functionality
+          and analytics. You may change your settings at any time or accept the
+          default settings. You may close this banner to continue with only
+          essential cookies. Read more about this in our privacy and cookie
+          statement.
+        </p>
+        <hr class="border-[#1c1e53] dark:border-[#ffffff]" />
+        <div class="cookies__bottom flex justify-between">
+          <div class="cookies__bottom__left pt-[15px]">
+            <a
+              href="#"
+              class="px-[30px] py-[15px] rounded-[8px] bg-[#1c1e53] text-[#ffffff] dark:bg-[#0f0f0f]" id="accept__cookie"
+              >Accept all</a
+            >
+            <a
+              href="#"
+              class="px-[30px] py-[15px] rounded-[8px] bg-[#1c1e53] text-[#ffffff] dark:bg-[#0f0f0f]" id="close__cookie"
+              >Reject all</a
+            >
+          </div>
+          <a href="#" class="px-[30px] py-[15px] rounded-[8px] bg-transparent"
+            >Manage preferences</a
+          >
+        </div>
+      </div>
     </div>
     <!-- wrapper -->
 
