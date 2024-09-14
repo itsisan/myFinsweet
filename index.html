@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finsweet: Webflow Development, Design, and Product Agency</title>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="public/css/swiper.css" />
     <link rel="stylesheet" href="./public/css/main.css" />
   </head>
   <body onload="hideLoader()">
@@ -675,7 +677,7 @@
           <nav class="mobile__menu__nav">
             <div class="menu__nav__items">
               <svg
-                class="times flex self-end border-[3px] border-[#fff] rounded-full"
+                class="times"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -1331,220 +1333,118 @@
               </div>
             </div>
             <div class="main__clients__right">
-              <div class="carousel w-full h-full font-[poppins-medium]">
-                <div id="slide1" class="carousel-item">
-                  <div class="carusel-comment">
-                    "The best agency we’ve worked with so far. They understand
-                    our product and are able to add new features with a great
-                    focus."
-                  </div>
-                  <div class="carousel-profile">
-                    <div class="carousel-profile-left">
-                      <div class="carousel-profile-left-img">
-                        <img
-                          src="./public/PNGs/profile-image.png"
-                          alt="profile"
-                          class="w-full h-full object-cover rounded-full"
-                        />
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper relative">
+                  <div class="swiper-slide">
+                    <div class="carusel-comment">
+                      "The best agency we’ve worked with so far. They understand
+                      our product and are able to add new features with a great
+                      focus."
+                    </div>
+                    <div class="carousel-profile">
+                      <div class="carousel-profile-left">
+                        <div class="carousel-profile-left-img">
+                          <img
+                            src="./public/PNGs/profile-image.png"
+                            alt="profile"
+                            class="w-full h-full object-cover rounded-full"
+                          />
+                        </div>
+                      </div>
+                      <div class="carousel-profile-right">
+                        <div class="text-[18px]">Jenny Wilson</div>
+                        <div class="text-[12px]">Vice President</div>
                       </div>
                     </div>
-                    <div class="carousel-profile-right">
-                      <div class="text-[18px]">Jenny Wilson</div>
-                      <div class="text-[12px]">Vice President</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carusel-comment">
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ea maxime ex corporis sint, consequuntur quasi!"
+                    </div>
+                    <div class="carousel-profile">
+                      <div class="carousel-profile-left">
+                        <div class="carousel-profile-left-img">
+                          <img
+                            src="./public/PNGs/profile-image-2.png"
+                            alt="profile"
+                            class="w-full h-full object-cover rounded-full"
+                          />
+                        </div>
+                      </div>
+                      <div class="carousel-profile-right">
+                        <div class="text-[18px]">Sara Dixon</div>
+                        <div class="text-[12px]">Artist</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="carousel-nav-buttons">
-                    <div
-                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
-                    >
-                      <a href="#slide3" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0995"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            transform="rotate(-180 24.0995 24)"
-                            fill="white"
+                  <div class="swiper-slide">
+                    <div class="carusel-comment">
+                      "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Unde, fugiat! Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Sit, aliquid."
+                    </div>
+                    <div class="carousel-profile">
+                      <div class="carousel-profile-left">
+                        <div class="carousel-profile-left-img">
+                          <img
+                            src="./public/PNGs/profile-image-3.png"
+                            alt="profile"
+                            class="w-full h-full object-cover rounded-full"
                           />
-                          <path
-                            opacity="0.6"
-                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
-                            fill="#282938"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#slide2" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0997"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            fill="#5239FA"
-                          />
-                          <path
-                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </a>
+                        </div>
+                      </div>
+                      <div class="carousel-profile-right">
+                        <div class="text-[18px]">Sam Lincon</div>
+                        <div class="text-[12px]">Lawyer</div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div id="slide2" class="carousel-item">
-                  <div class="carusel-comment">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    maxime ex corporis sint, consequuntur quasi!"
-                  </div>
-                  <div class="carousel-profile">
-                    <div class="carousel-profile-left">
-                      <div class="carousel-profile-left-img">
-                        <img
-                          src="./public/PNGs/profile-image-2.png"
-                          alt="profile"
-                          class="w-full h-full object-cover rounded-full"
-                        />
-                      </div>
-                    </div>
-                    <div class="carousel-profile-right">
-                      <div class="text-[18px]">Sara Dixon</div>
-                      <div class="text-[12px]">Artist</div>
-                    </div>
-                  </div>
-                  <div class="carousel-nav-buttons">
-                    <div
-                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
+                <div class="swiper-buttons-wrapper absolute w-[110px] bottom-[30px] right-[150px] flex flex-row-reverse justify-center max-[940px]:right-[50px] max-[480px]:right-[10px]">
+                  <div class="swiper-button-next w-[40px]">
+                    <svg
+                      width="49"
+                      height="48"
+                      viewBox="0 0 49 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <a href="#slide1" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0995"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            transform="rotate(-180 24.0995 24)"
-                            fill="white"
-                          />
-                          <path
-                            opacity="0.6"
-                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
-                            fill="#282938"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#slide3" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0997"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            fill="#5239FA"
-                          />
-                          <path
-                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                      <ellipse
+                        cx="24.0997"
+                        cy="24"
+                        rx="24.0997"
+                        ry="24"
+                        fill="#5239FA"
+                      />
+                      <path
+                        d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
+                        fill="white"
+                      />
+                    </svg>
                   </div>
-                </div>
-                <div id="slide3" class="carousel-item">
-                  <div class="carusel-comment">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde, fugiat! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Sit, aliquid."
-                  </div>
-                  <div class="carousel-profile">
-                    <div class="carousel-profile-left">
-                      <div class="carousel-profile-left-img">
-                        <img
-                          src="./public/PNGs/profile-image-3.png"
-                          alt="profile"
-                          class="w-full h-full object-cover rounded-full"
-                        />
-                      </div>
-                    </div>
-                    <div class="carousel-profile-right">
-                      <div class="text-[18px]">Sam Lincon</div>
-                      <div class="text-[12px]">Lawyer</div>
-                    </div>
-                  </div>
-                  <div class="carousel-nav-buttons">
-                    <div
-                      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between gap-x-[10px]"
+                  <div class="swiper-button-prev w-[40px]">
+                    <svg
+                      width="49"
+                      height="48"
+                      viewBox="0 0 49 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <a href="#slide2" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0995"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            transform="rotate(-180 24.0995 24)"
-                            fill="white"
-                          />
-                          <path
-                            opacity="0.6"
-                            d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
-                            fill="#282938"
-                          />
-                        </svg>
-                      </a>
-                      <a href="#slide1" class="btn btn-circle border-none">
-                        <svg
-                          width="49"
-                          height="48"
-                          viewBox="0 0 49 48"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <ellipse
-                            cx="24.0997"
-                            cy="24"
-                            rx="24.0997"
-                            ry="24"
-                            fill="#5239FA"
-                          />
-                          <path
-                            d="M18.4141 35L17 31.7805L26.0305 24.0894L17 16.2195L18.4141 13L30 23.374V25.1626L18.4141 35Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                      <ellipse
+                        cx="24.0995"
+                        cy="24"
+                        rx="24.0997"
+                        ry="24"
+                        transform="rotate(-180 24.0995 24)"
+                        fill="white"
+                      />
+                      <path
+                        opacity="0.6"
+                        d="M28.5859 13L30 16.2195L20.9695 23.9106L30 31.7805L28.5859 35L17 24.626L17 22.8374L28.5859 13Z"
+                        fill="#282938"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -2073,6 +1973,15 @@
     <script src="./jquery/dist/jquery.min.js"></script>
     <script src="JS/loading.js"></script>
     <script src="JS/mobile-menu.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <!-- scripts -->
   </body>
 </html>

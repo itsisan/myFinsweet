@@ -17,11 +17,13 @@ toggle_txt.addEventListener("click", function () {
     toggle_circle.style.left = "55px";
     toggle_sun.style.display = "none";
     toggle_moon.style.display = "block";
+    toggle_circle.style.backgroundColor = "#313131";
   } else {
     toggle_txt.textContent = "Light";
     toggle_circle.style.left = "3px";
     toggle_txt.style.textAlign = "right";
     toggle_sun.style.display = "block";
     toggle_moon.style.display = "none";
+    toggle_circle.style.backgroundColor = "#1c1e53";
   }
 });
