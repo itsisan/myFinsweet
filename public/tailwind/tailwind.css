@@ -925,5 +925,9 @@
 }
 
 .cookies__wrapper {
-  @apply font-[poppins-medium] fixed w-[600px] h-[250px] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none;
+  @apply font-[poppins-medium] fixed w-[600px] h-[250px] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none max-[640px]:w-[95%] max-[640px]:h-[55%] z-20;
+}
+
+.cookies__bottom {
+  @apply flex justify-between flex-wrap max-[640px]:flex-col max-[640px]:gap-y-[20px] max-[640px]:items-center;
 }
