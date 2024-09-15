@@ -83,7 +83,7 @@
   }
 
   .header__top {
-    @apply w-full h-[92px] mx-auto bg-[#1C1E53] dark:bg-[#313131] lg:w-full;
+    @apply fixed top-0 w-full h-[92px] mx-auto bg-[#1C1E53] dark:bg-[#313131] lg:w-full z-30 max-[640px]:h-[80px];
   }
 
   .header__top__inner {
@@ -123,7 +123,7 @@
   }
 
   .header__bottom {
-    @apply flex justify-between flex-wrap w-[85%] mx-auto mt-[150px] max-[1450px]:justify-center max-[1450px]:items-center max-[450px]:mt-[80px];
+    @apply flex justify-between flex-wrap w-[85%] mx-auto max-[1450px]:justify-center max-[1450px]:items-center max-[640px]:pt-[50px];
   }
 
   .header__bottom__right {
@@ -159,7 +159,7 @@
   }
 
   .mobile__menu {
-    @apply fixed top-[-100%] w-full h-[400px] py-[25px] bg-[#fcd980ea] dark:bg-[#242a38] backdrop-blur text-[18px] font-[poppins-medium] md:hidden transition-all duration-500 border-b-[2px] border-b-[#fff] z-20;
+    @apply fixed top-[-100%] w-full h-[400px] py-[25px] bg-[#fcd980ea] dark:bg-[#313131] backdrop-blur text-[18px] font-[poppins-medium] md:hidden transition-all duration-500 border-b-[2px] border-b-[#fff] z-40;
   }
 
   .mobile__menu__nav {
@@ -392,8 +392,7 @@
   }
 
   .main__FAQ__inner {
-    @apply w-[85%] h-[537px] mx-auto flex justify-between flex-wrap max-[1440px]:justify-center max-[1440px]:h-full max-[1440px]:py-[30px]
-    max-[970px]:w-full dark:bg-[#0f0f0f] dark:text-[#ffffff];
+    @apply w-[85%] h-[537px] mx-auto flex justify-between flex-wrap max-[1440px]:pt-[150px] max-[1440px]:justify-center max-[1440px]:h-full max-[1440px]:py-[30px] max-[970px]:w-full dark:bg-[#0f0f0f] dark:text-[#ffffff];
   }
 
   .main__FAQ__left {
@@ -698,7 +697,7 @@
   }
 
   .main__pricing__top {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center max-[640px]:pt-[100px];
   }
 
   .main__pricing__bottom {
@@ -735,7 +734,7 @@
   }
 
   .main__featured__blog {
-    @apply flex justify-center items-center w-full h-[1110px] font-[poppins-medium] max-[740px]:h-full max-[740px]:mt-[100px];
+    @apply flex justify-center items-center w-full h-[1110px] font-[poppins-medium] max-[740px]:h-full pt-[128px];
   }
 
   .featured__blog__title {
@@ -812,7 +811,7 @@
   }
 
   .main__work__hero {
-    @apply w-full h-[415px] bg-[#f4f6fc] font-[poppins-medium] flex flex-col justify-center items-center text-center gap-y-[20px] max-[450px]:py-[30px] dark:bg-[#0f0f0f];
+    @apply w-full h-[415px] pt-[100px] bg-[#f4f6fc] font-[poppins-medium] flex flex-col justify-center items-center text-center gap-y-[20px] max-[450px]:pt-[100px] dark:bg-[#0f0f0f];
   }
 
   .work__hero__title {
@@ -896,7 +895,7 @@
   }
 
   .case__studies__top {
-    @apply w-[70%] mx-auto flex flex-col gap-y-[40px] mt-[128px] max-[740px]:w-full max-[780px]:text-center max-[780px]:items-center;
+    @apply w-[70%] mx-auto flex flex-col gap-y-[40px] pt-[128px] max-[740px]:w-full max-[780px]:text-center max-[780px]:items-center;
   }
 
   .case__studies__info {
@@ -925,7 +924,7 @@
 }
 
 .cookies__wrapper {
-  @apply font-[poppins-medium] fixed w-[600px] h-[250px] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none max-[640px]:w-[95%] max-[640px]:h-[55%] z-20;
+  @apply font-[poppins-medium] fixed w-[600px] h-[35%] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none max-[640px]:w-[95%] max-[640px]:h-[55%] z-20;
 }
 
 .cookies__bottom {
