@@ -5290,6 +5290,18 @@ html::-webkit-scrollbar {
   height: 100%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -5497,6 +5509,11 @@ html::-webkit-scrollbar {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
