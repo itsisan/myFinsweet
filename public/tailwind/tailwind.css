@@ -924,7 +924,7 @@
 }
 
 .cookies__wrapper {
-  @apply font-[poppins-medium] fixed w-[600px] h-[35%] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none max-[640px]:w-[95%] max-[640px]:h-[55%] z-20;
+  @apply font-[poppins-medium] fixed w-[600px] h-[300px] flex flex-col gap-y-[15px] bg-[#ffffff] border-[2px] border-[#1c1e53] rounded-[8px] bottom-[10px] left-[10px] text-[#1c1e53] p-[20px] dark:bg-[#313131] dark:text-[#ffffff] dark:border-none max-[640px]:w-[95%] max-[640px]:h-[55%] z-20;
 }
 
 .cookies__bottom {

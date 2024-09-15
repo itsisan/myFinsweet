@@ -5716,7 +5716,7 @@ html::-webkit-scrollbar {
   left: 10px;
   z-index: 20;
   display: flex;
-  height: 35%;
+  height: 300px;
   width: 600px;
   flex-direction: column;
   row-gap: 15px;
